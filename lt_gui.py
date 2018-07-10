@@ -9,4 +9,14 @@
 
 from tkinter import Tk, Label, Button, OptionMenu, Entry
 
-lt_gui = Tk()
+
+rootwindow = Tk()
+
+def main_window():
+  Label(rootwindow, text='LabTrack GUI').grid(row=0, column=0)
+ 
+def add_new():
+  addnew_win = TopLevel(rootwindow)
+  Label(addnew_win, text='Item Category: ').grid(row=0, column=0)
+
+mainloop()
