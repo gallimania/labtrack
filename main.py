@@ -13,8 +13,9 @@
 # I do this all in my spare time so any amount of money helps me to continue the development
 # of this project.
 #
-# main.py
+# begin main.py
 
 import lt_gui
-import f
-
+import lt_json
+import lt_sqlite
+import lt_func
