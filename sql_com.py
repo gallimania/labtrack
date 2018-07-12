@@ -9,8 +9,8 @@ sql_curs = sql_conn.cursor()
 def create_table(entry_tableName):
   ''' Creates a table within the created database file using the table name specified by the
   variable entry_tableName '''
-  sql_curs.execute('''
-  CREATE TABLE {} (chemical_name TEXT, cas_num TEXT, purchase_price TEXT, purchase_amt TEXT) INSERT (?,?,?,?)
+  sql_command = "CREATE TABLE {} (TEXT, cas_num TEXT, purchase_price TEXT, purchase_amt TEXT) INSERT (?,?,?,?)".format(entry_tableName)
+  sql_curs.execute(sql_command)
   ''').format(entry_tableName)
 
 def new_entry(chemical_name, cas_num, purchase_price, purchase_amt):
