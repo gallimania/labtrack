@@ -10,9 +10,6 @@
 # ETH Adress:
 # LTC Adress:
 #
-# I do this all in my spare time so any amount of money helps me to continue the development
-# of this project.
-#
 # begin main.py
 
 import lt_gui
